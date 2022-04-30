@@ -5,13 +5,15 @@ public class Main {
 
     public static void main(String[] args) {
 
-        double iva=5.77;
+
+
         int precio= 200;
 
-        double valorIva= calculoIva(iva,precio);
+        double valorIva= calculoIva(precio);
         System.out.println(valorIva);
     }
-    static double calculoIva(double iva, int precio){
+    static double calculoIva(int precio){
+        double iva=5.77;
         return ((iva * precio)/100)+precio;
     }
 }
